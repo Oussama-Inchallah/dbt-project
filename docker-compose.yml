@@ -9,8 +9,8 @@ services:
     ports:
       - "5432:5432"
 
-  # dbt docs serve defaults to 8080 -- Adminer uses 8082 so both can run
-  # side by side without a port clash. Same convention as the BIM lab.
+  # dbt docs serve defaults to 8080 
+  # Adminer uses 8082 so both can run side by side without a port clash. 
   adminer:
     image: adminer:4.8.1
     depends_on:
