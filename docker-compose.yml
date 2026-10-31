@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: indrive
       POSTGRES_DB: indrive_warehouse
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
   # dbt docs serve defaults to 8080 
   # Adminer uses 8082 so both can run side by side without a port clash. 
