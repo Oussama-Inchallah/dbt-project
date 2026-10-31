@@ -6,7 +6,7 @@ indrive_analytics:
     dev:
       type: postgres
       host: localhost
-      port: 5432
+      port: 5433
       user: indrive
       password: indrive
       dbname: indrive_warehouse
