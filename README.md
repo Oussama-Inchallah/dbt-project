@@ -1,6 +1,6 @@
 # dbt-project : guide dbt avec PostgreSQL
 
-Projet pédagogique réalisé dans le cadre d'un BootCamp pour comprendre le
+Projet pédagogique réalisé dans le cadre d'un BootCamp "Data Maroc Bootcamps" pour comprendre le
 fonctionnement d'un projet dbt de bout en bout : chargement de données brutes,
 transformation SQL, tests de qualité, snapshot et exposition de tables
 analytiques dans PostgreSQL.
@@ -101,13 +101,12 @@ quotidiens, le cumul et le classement des conducteurs.
 | `dbt/seeds/*.csv` | Données CSV d'entrée | De nouveaux jeux de données de référence |
 | `dbt/seeds/schema.yml` | Types et documentation des seeds | Des descriptions et types de colonnes |
 | `dbt/models/staging/` | Nettoyage et typage des sources | Un modèle `stg_*.sql` par source |
+| `dbt/models/staging/schema.yml` | Documentation et tests des modèles | Tests `unique`, `not_null`, relations, etc. |
 | `dbt/models/intermediate/` | Logique de préparation et d'enrichissement | Des modèles intermédiaires réutilisables |
 | `dbt/models/marts/` | Tables finales destinées à l'analyse | Des faits, dimensions et agrégats |
-| `dbt/models/*/schema.yml` | Documentation et tests des modèles | Tests `unique`, `not_null`, relations, etc. |
 | `dbt/snapshots/` | Historisation des changements | De nouveaux snapshots |
 | `dbt/tests/` | Tests SQL métier personnalisés | Une requête qui retourne les lignes invalides |
 | `dbt/macros/` | Fonctions Jinja/SQL réutilisables | Des règles de transformation communes |
-| `docs/` | Notes et commandes pédagogiques | Des explications complémentaires |
 | `dbt/target/` | Artefacts générés par dbt | Ne pas modifier manuellement |
 | `dbt/logs/` | Journaux d'exécution | Ne pas utiliser comme source de données |
 
